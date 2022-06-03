@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        UL {
+            height: 50px;
+            background-color: black;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul li {
+            /* display: flex; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: 2.5px;
+            color: white;
+            padding: 12px 30px 14px 30px;
+            display: inline;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+        @keyframes textanimate {
+            0%{
+                color: greenyellow;letter-spacing: 5px;
+            }
+            50%{
+                color: rgb(7, 108, 203);letter-spacing: 7px;
+            }
+            100%{
+                color: white;letter-spacing: 3px;
+            }
+            
+        }
+        
+        H1{
+            letter-spacing: 5px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            animation: textanimate 2s cubic-bezier(0, 0, 1, 1) 0s infinite alternate;
+            
+        }
+        img{
+            margin-right: 285px;
+            animation: animate 2s cubic-bezier(0, 0, 1, 1) 0s infinite forwards;
+     
+        }
+
+        a {
+            text-decoration: none;
+            color: White;
+
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: rgb(0, 119, 255);
+            text-align: center;
+        }
+        @keyframes animate {
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(180deg);
+            }
+            
+        }
+
+        @media screen and (max-width: 800px) {
+            ul {
+                background-color: rgb(39, 11, 93);
+            }
+
+            li:hover {
+                background-color: rgb(91, 38, 216);
+            }
+        }
+
+        @media screen and (max-width: 481px) {
+            a {
+                font-size: 70%;
+            }
+
+            li:hover {
+                background-color: rgb(91, 38, 216);
+            }
+        }
+
+        @media screen and (max-width: 410px) {
+            ul li {
+                padding: 5px;
+            }
+
+            li:hover {
+                background-color: rgb(91, 38, 216);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav> <h1>ISIE NITP SRA</h1>
+            <ul>
+                <div>
+
+                    <li>
+                        <a href="https://google.com" target="_blank">HOME</a>
+                    </li>
+                    <li><a href="https://google.com" target="_blank">TEAM</a> </li>
+                    <li>
+                        <a href="https://google.com" target="_blank">CONTACTS</a>
+                    </li>
+                </div>
+                <img src="Group.png" alt="" width="40px">
+                <div>
+                    <li class="about">
+                        <a href="https://google.com" target="_blank">ABOUT</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+    <script>
+        console.log("welcome");
+    </script>
+
+</body>
+
+</html>
